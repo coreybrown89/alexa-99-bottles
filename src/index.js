@@ -44,7 +44,7 @@ var FACTS = [
     "To pour a perfect pint of Guinness you need to let it rest for exactly one-hundred-nineteen point five seconds between the first pour and the top-up, a period called the surge and settle.",
     "Storing beer upright reduces the chance of oxidation and contamination from the cap.",
     "Vielle Bon Secours is by far the most expensive been, sold only at Bierdrome in London at seven hundred pounds, or eight hundred and seventy dollars.",
-    "The first modern American I P A was Anchor Liberty Ale.",
+    "The first modern American I-P-A was Anchor Liberty Ale.",
     "North Dakota drinks more beer per person than any other state in the U S.",
     "Seven point three million liters of beer were severed at Oktoberfest in two thousand fifteen.",
     "Mississippi and Alabama legalized homebrewing in two thousand thirteen.",
@@ -117,7 +117,7 @@ Fact.prototype.intentHandlers = {
  * Gets a random new fact from the list and returns to the user.
  */
 function handleNewFactRequest(response) {
-    // Get a random space fact from the space facts list
+    // Get a random beer fact from the beer facts list
     var factIndex = Math.floor(Math.random() * FACTS.length);
     var randomFact = FACTS[factIndex];
 
@@ -129,7 +129,7 @@ function handleNewFactRequest(response) {
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of the SpaceGeek skill.
+    // Create an instance of the Beer Facts skill.
     var fact = new Fact();
     fact.execute(event, context);
 };

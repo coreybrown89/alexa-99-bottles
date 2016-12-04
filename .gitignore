@@ -1,6 +1,7 @@
 # Random #
 ##########
 *.pdf
+/FactSkillTemplate
 
 # Packages #
 ############
