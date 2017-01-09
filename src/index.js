@@ -11,7 +11,7 @@
 /**
  * App ID for the skill
  */
-var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+ var APP_ID = "amzn1.ask.skill.e4cb6118-5cb2-4d6b-86b7-4e38c747f6e6";
 
 /**
  * Array containing beer facts.
